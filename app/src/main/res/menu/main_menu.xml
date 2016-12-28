@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--  Menu "Copy"-->
+    <item
+        android:id="@+id/mn_copy"
+        android:title="@string/mn_copy"
+        app:showAsAction="never" />
+    <!--  Menu "Copy of"-->
+    <item
+        android:id="@+id/mn_copy_of"
+        android:title="@string/mn_copy_of"
+        app:showAsAction="always">
+
+        <!--  Sub Menu for "Copy of"-->
+        <menu>
+            <!--  Menu "Copy all"-->
+            <item
+                android:id="@+id/mn_copy_all"
+                android:orderInCategory="1"
+                android:title="@string/mn_copy_all"
+                app:showAsAction="never" />
+            <!--  Menu "Copy first"-->
+            <item
+                android:id="@+id/mn_copy_first"
+                android:orderInCategory="2"
+                android:title="@string/mn_copy_first"
+                app:showAsAction="never" />
+        </menu>
+
+    </item>
+    <!--  Menu "Clear all"-->
+    <item
+        android:id="@+id/mn_clear_all"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/mn_clear"
+        app:showAsAction="always" />
+</menu>
+
