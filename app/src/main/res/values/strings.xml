@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lesson2</string>
+    <string name="my_name">Buynichev Alexey Sergeevich</string>
+    <string name="email">lexxer@list.ru</string>
+    <string name="position">Android-developer</string>
+    <string name="description_port">Здесь должен быть какой-то длинный текст описания моих мега-навыков и скилов, который берется из ресурса strings.xml и будет показываться только в ПОРТРЕТНОЙ ориентации</string>
+    <string name="description_land">Здесь должен быть какой-то длинный текст описания моих мега-навыков и скилов, который берется из ресурса strings.xml и будет показываться только в ЛАНДШАФТНОЙ ориентации</string>
+</resources>
