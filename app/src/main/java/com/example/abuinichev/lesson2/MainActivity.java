@@ -1,23 +1,18 @@
 package com.example.abuinichev.lesson2;
 
 import android.graphics.Color;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout ll;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //ll = (LinearLayout) findViewById(R.layout.main_activity);
         setContentView(R.layout.main_activity);
     }
 
@@ -32,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.mn_color_red:
-                //tvText.setText(edText.getText());
-                //ll = (LinearLayout) findViewById(R.id.main_activity);
-                //ll.setBackgroundColor(Color.RED);
+            case R.id.mn_2:
                 Toast toast = Toast.makeText(this, "Просто тост", Toast.LENGTH_SHORT);
                 toast.show();
                 return true;
-
+            case R.id.mn_3_1:
+                LinearLayout ll = (LinearLayout) findViewById(R.layout.main_activity);
+                ll.setBackgroundColor(Color.RED);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

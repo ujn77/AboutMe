@@ -2,39 +2,63 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!--  Menu "Copy"-->
+
     <item
-        android:id="@+id/mn_copy"
-        android:title="@string/mn_copy"
-        app:showAsAction="never" />
-    <!--  Menu "Copy of"-->
+        android:id="@+id/mn_1"
+        android:icon="@mipmap/battery"
+        app:showAsAction="always" />
+
     <item
-        android:id="@+id/mn_copy_of"
-        android:title="@string/mn_copy_of"
+        android:id="@+id/mn_2"
+        android:title="@string/toast"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/mn_3"
+        android:title="Paint!"
         app:showAsAction="always">
 
-        <!--  Sub Menu for "Copy of"-->
         <menu>
-            <!--  Menu "Copy all"-->
             <item
-                android:id="@+id/mn_copy_all"
+                android:id="@+id/mn_3_1"
                 android:orderInCategory="1"
-                android:title="@string/mn_copy_all"
-                app:showAsAction="never" />
-            <!--  Menu "Copy first"-->
+                android:title="red"
+                app:showAsAction="always" />
+
             <item
-                android:id="@+id/mn_copy_first"
+                android:id="@+id/mn_3_2"
                 android:orderInCategory="2"
-                android:title="@string/mn_copy_first"
-                app:showAsAction="never" />
+                android:title="blue"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/mn_3_3"
+                android:orderInCategory="3"
+                android:title="green"
+                app:showAsAction="always" />
         </menu>
 
     </item>
-    <!--  Menu "Clear all"-->
+
     <item
-        android:id="@+id/mn_clear_all"
-        android:icon="@android:drawable/ic_menu_close_clear_cancel"
-        android:title="@string/mn_clear"
-        app:showAsAction="always" />
+        android:id="@+id/mn_4"
+        android:icon="@mipmap/attachment"
+        android:title="zero item"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mn_5"
+        android:icon="@mipmap/attachment"
+        android:title="first item"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mn_6"
+        android:icon="@mipmap/attachment"
+        android:title="second item"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mn_7"
+        android:icon="@mipmap/attachment"
+        android:title="third item"
+        app:showAsAction="ifRoom" />
 </menu>
 

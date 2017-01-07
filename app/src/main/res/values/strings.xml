@@ -5,9 +5,5 @@
     <string name="position">Android-developer</string>
     <string name="description_port">Здесь должен быть какой-то длинный текст описания моих мега-навыков и скилов, который берется из ресурса strings.xml и будет показываться только в ПОРТРЕТНОЙ ориентации</string>
     <string name="description_land">Здесь должен быть какой-то длинный текст описания моих мега-навыков и скилов, который берется из ресурса strings.xml и будет показываться только в ЛАНДШАФТНОЙ ориентации</string>
-    <string name="mn_copy">mn_copy</string>
-    <string name="mn_copy_of">mn_copy_of</string>
-    <string name="mn_copy_all">mn_copy_all</string>
-    <string name="mn_copy_first">mn_copy_first</string>
-    <string name="mn_clear">mn_clear</string>
+    <string name="toast">Toast!</string>
 </resources>
