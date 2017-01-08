@@ -25,15 +25,21 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
+        LinearLayout ll = (LinearLayout) findViewById(R.id.MA);
         switch (item.getItemId()) {
+
             case R.id.mn_2:
                 Toast toast = Toast.makeText(this, "Просто тост", Toast.LENGTH_SHORT);
                 toast.show();
                 return true;
             case R.id.mn_3_1:
-                LinearLayout ll = (LinearLayout) findViewById(R.layout.main_activity);
                 ll.setBackgroundColor(Color.RED);
+                return true;
+            case R.id.mn_3_2:
+                ll.setBackgroundColor(Color.BLUE);
+                return true;
+            case R.id.mn_3_3:
+                ll.setBackgroundColor(Color.GREEN);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

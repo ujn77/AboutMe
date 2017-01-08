@@ -1,45 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_light">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/MA"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/holo_orange_light"
+              android:orientation="vertical">
 
 
     <TextView
-        android:text="@string/my_name"
+        android:id="@+id/TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/TextView"
-        android:layout_row="0"
         android:layout_column="1"
+        android:layout_row="0"
         android:fontFamily="sans-serif"
+        android:text="@string/my_name"
         android:textSize="36sp"
-        android:textStyle="normal|bold" />
+        android:textStyle="normal|bold"/>
 
     <TextView
-        android:text="@string/email"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2" />
+        android:text="@string/email"/>
 
     <TextView
-        android:text="@string/position"
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3" />
+        android:text="@string/position"/>
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/small"
-        android:id="@+id/imageView2"
-        android:src="@drawable/small" />
+        android:src="@drawable/small"
+        app:srcCompat="@drawable/small"/>
 
     <TextView
-        android:text="@string/description_land"
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView4" />
+        android:text="@string/description_land"/>
 </LinearLayout>
