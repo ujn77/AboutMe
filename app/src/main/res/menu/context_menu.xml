@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item
-    android:id="@+id/mn_cont_1"
-    android:title="@string/toast"
-    android:icon="@mipmap/battery"/>
+    <item
+        android:id="@+id/mn_cont_1"
+        android:icon="@mipmap/battery"
+        android:title="Просто "/>
 
-<item
-    android:id="@+id/mn_cont_2"
-    android:title="@string/toast"
-    android:icon="@mipmap/battery"/>
+    <item
+        android:id="@+id/mn_cont_2"
+        android:icon="@mipmap/battery"
+        android:title="контекстное меню"/>
+
+    <item
+        android:id="@+id/mn_cont_3"
+        android:icon="@mipmap/battery"
+        android:title="из трех пунктов"/>
 </menu>

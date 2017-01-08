@@ -43,22 +43,18 @@
     <item
         android:id="@+id/mn_4"
         android:icon="@mipmap/attachment"
-        android:title="zero item"
+        android:title="simple alert"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/mn_5"
         android:icon="@mipmap/attachment"
-        android:title="first item"
+        android:title="alert with buttons"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/mn_6"
         android:icon="@mipmap/attachment"
-        android:title="second item"
+        android:title="choose the date"
         app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/mn_7"
-        android:icon="@mipmap/attachment"
-        android:title="third item"
-        app:showAsAction="ifRoom" />
+
 </menu>
 
