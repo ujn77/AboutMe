@@ -10,8 +10,11 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.LinearLayout;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +25,8 @@ import java.util.GregorianCalendar;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ListAdapter mAdapter = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv4 = (TextView) findViewById(R.id.textView4);
         registerForContextMenu(tv4);
+
+        ListView lv = (ListView) findViewById(R.id.lv);
+
+        mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,
+        getResources().getStringArray(R.array.skill_list));
+
+        lv.setAdapter(mAdapter);
     }
 
     @Override
