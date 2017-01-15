@@ -10,10 +10,8 @@ import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.LinearLayout;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,7 +23,9 @@ import java.util.GregorianCalendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ListAdapter mAdapter = null;
+    //private ListAdapter mAdapter = null;
+    private DataAdapter mAdapter = null;
+    private String[] mStringArray = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +37,18 @@ public class MainActivity extends AppCompatActivity {
 
         ListView lv = (ListView) findViewById(R.id.lv);
 
-        mAdapter = new ArrayAdapter<>(this, R.layout.my_list_item,
-        getResources().getStringArray(R.array.skill_list));
+//        mAdapter = new ArrayAdapter<>(this, R.layout.my_list_item,
+//        getResources().getStringArray(R.array.skill_list));
+
+        mStringArray = getResources().getStringArray(R.array.skill_list);
+        mAdapter = new DataAdapter(getApplicationContext(), mStringArray);
+
+        //mAdapter.setOnRemoveItemListener(this);
+       // getResources().getStringArray(R.array.skill_list);
+
+//        for (int i = 1; i <= 30; i++) {
+//            mAdapter.addItem("Item " + i);
+//        }
 
         lv.setAdapter(mAdapter);
     }
