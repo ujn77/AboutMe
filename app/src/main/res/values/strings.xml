@@ -3,7 +3,19 @@
     <string name="my_name">Buynichev Alexey Sergeevich</string>
     <string name="email">lexxer@list.ru</string>
     <string name="position">Android-developer</string>
-    <string name="description_port">Здесь должен быть какой-то длинный текст описания моих мега-навыков и скилов, который берется из ресурса strings.xml и будет показываться только в ПОРТРЕТНОЙ ориентации</string>
-    <string name="description_land">Здесь должен быть какой-то длинный текст описания моих мега-навыков и скилов, который берется из ресурса strings.xml и будет показываться только в ЛАНДШАФТНОЙ ориентации</string>
+    <string name="description_port">Список навыков и умений для ПОРТРЕТНОЙ ориентации</string>
+    <string name="description_land">Список навыков и умений для ЛАНДШАФТНОЙ ориентации</string>
     <string name="toast">Toast!</string>
+    <string-array name="skill_list">
+        <item>Программист 1С</item>
+        <item>Системный администратор</item>
+        <item>Слесарь-монтажник</item>
+        <item>Повар по совместительству</item>
+        <item>Просто хороший человек</item>
+        <item>Незаменимый специалист</item>
+        <item>Любящий отец</item>
+        <item>Душа компании</item>
+        <item>Хороший друг</item>
+        <item>Король вечеринок</item>
+    </string-array>
 </resources>
